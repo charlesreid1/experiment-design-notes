@@ -1,0 +1,22 @@
+{% include '_includes/head.html' %}
+{% include '_includes/navbar.html' %}
+
+
+<div class="container">
+
+<div class="col-lg-3">
+{% include '_includes/sidebar.html' %}
+</div>
+
+<div class="col-lg-9">
+{% block content %}
+{% endblock %}
+</div>
+
+</div>
+
+{% include '_includes/javascript.html' %}
+{% block javascript %}
+{% endblock %}
+{% include '_includes/foot.html' %}
+
