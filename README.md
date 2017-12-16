@@ -13,7 +13,7 @@ The main output of the repository consists of HTML pages
 and Jupyter notebooks containing lecture notes and
 example problems on various experimental design topics. 
 
-**Link:** [http://charlesreid1.github.io/experiment-design]
+**Link:** [http://charlesreid1.github.io/experiment-design](http://charlesreid1.github.io/experiment-design)
 
 To generate these, use Pelican (see next section).
 
