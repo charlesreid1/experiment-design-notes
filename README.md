@@ -38,7 +38,7 @@ is organized as follows:
     * Jupyter nbconvert commands should be called by `pelicanconf.py`
 
 * Static content in `docs` is hosted on Github Pages 
-    * Link: [http://charlesreid1.github.io/experiment-design]
+    **Link:** [http://charlesreid1.github.io/experiment-design](http://charlesreid1.github.io/experiment-design)
 
 
 ### Configuration file:
