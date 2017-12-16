@@ -2,6 +2,11 @@
 
 Notes on experimental design.
 
+
+<br />
+<br />
+
+
 ## HTML Pages and Notebooks
 
 The main output of the repository consists of HTML pages 
@@ -9,6 +14,13 @@ and Jupyter notebooks containing lecture notes and
 example problems on various experimental design topics. 
 
 **Link:** [http://charlesreid1.github.io/experiment-design]
+
+To generate these, use Pelican (see next section).
+
+
+<br />
+<br />
+
 
 ## Source Code
 
@@ -27,3 +39,41 @@ is organized as follows:
 
 * Static content in `docs` is hosted on Github Pages 
     * Link: [http://charlesreid1.github.io/experiment-design]
+
+### Pelican
+
+#### Configuration file:
+
+The Pelican configuration file is `pelicanconf.py`.
+
+#### Raw Content: 
+
+Pelican turns raw content (markdown, HTML-like Jinja templates)
+into static HTML content.
+
+The default location for Pelican content is `content/`. 
+This is where it looks for markdown files to turn into static content.
+You can add more locations by adding to the list `EXTRA_TEMPLATE_PATHS`
+in `pelicanconf.py`.
+
+Markdown files in `content/` will be rendered as blog posts. 
+This is problematic if there is no support for blog stuff, 
+as with the theme we are using,
+
+Markdown files in `content/pages/` will be rendered as static 
+HTML pages. Easy peasy. 
+
+#### Theme:
+
+The basic template files are contained in the theme folder.
+To add your own templates to customize the theme, add more paths
+containing templates to the `EXTRA_TEMPLATES_PATHS` list 
+in `pelicanconf.py`.
+
+Also explicitly add HTML template pages like this:
+
+```
+TEMPLATE_PAGES['mypage.html'] = 'mypage.html'
+TEMPLATE_PAGES['custompath.html'] = 'custom/path/custompath.html'
+```
+

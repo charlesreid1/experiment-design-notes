@@ -21,6 +21,9 @@ THEME = 'cmr-2017-theme'
 # pelican-themes -i cmr-2017-theme
 
 
+OUTPUT_PATH = 'docs/'
+
+
 
 # -------------------
 # Plugins:
