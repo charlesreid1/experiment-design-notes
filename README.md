@@ -76,14 +76,16 @@ TEMPLATE_PAGES['mypage.html'] = 'mypage.html'
 TEMPLATE_PAGES['custompath.html'] = 'custom/path/custompath.html'
 ```
 
+We use this to turn a custom HTML template into an index/splash page:
+
+```
+TEMPLATE_PAGES['splash.html'] = 'index.html'
+```
+
 ### Splash/Landing Page:
 
-The splash/landing page is in `content/pages/splash.md` and is converted
-into the destination file `index.html` (via directives in the markdown file).
-To modify the splash/startup page, just modify this Markdown file.
-
-More complicated configurations can be achieved by setting values for 
-custom variables in the header of the Markdown file, and accessing those
-variable values in the theme's templates.
-
+The splash/landing page is a Jinja template at `content/splash.html`.
+It is converted into the destination file `index.html` as per `pelicanconf.py`.
+To modify the template, just edit `splash.html`. 
+To use a different template as the splash page, just modify `pelicanconf.py`.
 
