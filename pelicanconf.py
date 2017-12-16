@@ -1,14 +1,32 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
-import re, os
+import re, os, sys
 
-## Local:
-#SITEURL = ''
+########################################
+# pelican configuration file
+########################################
 
-# Github Pages:
+
+# ======================================
+# General theme info
+
+
+# -----------------------
+# SET THIS!!!!!1!11!!!!!!!!!!
+
+# Local viewing:
+SITEURL = ''
+
+# Github hosting
 SITEURL = 'experimental-design'
+# 
+# OK TNX BYE
+# ----------------------
 
+
+# Destination (hosting dir)
+OUTPUT_PATH = 'docs/'
 
 AUTHOR = u'charlesreid1'
 SITENAME = u'experimental-design'
@@ -16,65 +34,91 @@ SITENAME = u'experimental-design'
 PATH = 'content'
 THEME = 'cmr-lecture-notes-theme'
 
-# to install this theme:
-# git checkout http://charlesreid1.com:3000/charlesreid1/cmr-2017-theme
-# pelican-themes -i cmr-2017-theme
+# To permanently install a theme:
+# git clone <theme-url>/<theme-name>
+# pelican-themes -i <theme-name>
 
 
-OUTPUT_PATH = 'docs/'
-
-
-
-# -------------------
-# Plugins:
+# ======================================
+# Configure pelican plugin location:
 HOME = os.environ.get('HOME')
 PLUGIN_PATHS = [HOME+'/codes/pelican-plugins/']
+
+# For math!
 PLUGINS = ['render_math']
 
-#MARKUP = ('md')
+
+# ======================================
+# Static content
+# 
+# css files, images, etc.
+
+STATIC_PATHS = ['images']
+
+
+# =====================================
+# HTML/Markdown mixing
+# 
+# This requires a bit of an explanation.
+# Page content can be made 3 ways:
+# - Markdown
+# - HTML Templates: HTML files that use Jinja templates
+# - HTML (raw)
+# (images/style files are covered by static content above).
 
 # Don't try to turn HTML files into pages
 READERS = {'html': None}
 
 
-# --------------------
-# Static content
-
-STATIC_PATHS = ['images']
-
-
-
-# --------------------
-# Templates
-
-######################
-# Templates:
-
 EXTRA_TEMPLATES_PATHS = []
-TEMPLATE_PAGES = {}
 
-## To add paths:
+
+# Markdown:
+# --------------------
+# 
+# Pelican looks for Markdown files in content/ 
+# by default. To render Markdown in other directories,
+# add them to EXTRA_TEMPLATES_PATHS
 EXTRA_TEMPLATES_PATHS.append('content')
+
+
+# HTML Templates: 
+# --------------------
+# 
+# These look like normal .html files, but also utilize
+# Jinja templates. Think of these as extensions of the 
+# HTML files defined in the theme.
+# 
+# This allows you to pass variables to the theme,
+# do conditional configuration, etc.
+
+# Add places to look for templates:
+#EXTRA_TEMPLATES_PATHS.append('content')
+
+# We also need to explicitly add the names of the templates 
+# we want to render using TEMPLATE_PAGES (dictionary)
+# 
+# The key-value pairs of TEMPLATE_PAGES are the source and destination files.
+TEMPLATE_PAGES = {}
 
 # To add template pages in those directories:
 #TEMPLATE_PAGES['mynotebook.html'] = 'mynotebook.html'
 TEMPLATE_PAGES['splash.html'] = 'index.html'
 
 
+# Raw HTML:
+# --------------------
+
+# Add places to look for raw HTML:
+#EXTRA_TEMPLATES_PATHS.append('content')
 
 
-# --------------8<---------------------
-
-# Feed generation is usually not desired when developing
+# ======================================
+# Miscellaneous
 FEED_ALL_ATOM = None
 CATEGORY_FEED_ATOM = None
 TRANSLATION_FEED_ATOM = None
 AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
-
 TIMEZONE = 'America/Los_Angeles'
 DEFAULT_LANG = u'en'
-
-# Uncomment following line if you want document-relative URLs when developing
-#RELATIVE_URLS = True
-
