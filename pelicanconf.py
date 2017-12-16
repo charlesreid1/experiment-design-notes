@@ -3,11 +3,11 @@
 from __future__ import unicode_literals
 import re, os
 
-# Local:
-SITEURL = ''
+## Local:
+#SITEURL = ''
 
-## Github Pages:
-#SITEURL = 'experimental-design'
+# Github Pages:
+SITEURL = 'experimental-design'
 
 
 AUTHOR = u'charlesreid1'
