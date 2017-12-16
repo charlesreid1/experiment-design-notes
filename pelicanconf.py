@@ -33,8 +33,8 @@ PLUGINS = ['render_math']
 
 #MARKUP = ('md')
 
-### # Don't try to turn HTML files into pages
-### READERS = {'html': None}
+# Don't try to turn HTML files into pages
+READERS = {'html': None}
 
 
 # --------------------
@@ -55,7 +55,6 @@ TEMPLATE_PAGES = {}
 
 ## To add paths:
 EXTRA_TEMPLATES_PATHS.append('content')
-#EXTRA_TEMPLATES_PATHS.append('content/pages')
 
 # To add template pages in those directories:
 #TEMPLATE_PAGES['mynotebook.html'] = 'mynotebook.html'
