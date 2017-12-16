@@ -14,7 +14,7 @@ AUTHOR = u'charlesreid1'
 SITENAME = u'experimental-design'
 
 PATH = 'content'
-THEME = 'cmr-2017-theme'
+THEME = 'cmr-lecture-notes-theme'
 
 # to install this theme:
 # git checkout http://charlesreid1.com:3000/charlesreid1/cmr-2017-theme
