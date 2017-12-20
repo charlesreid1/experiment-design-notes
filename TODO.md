@@ -1,23 +1,23 @@
 Completed TODO items: 
 
-[x] Add Pelican theme to this repo for temporary improvements
-[x] Improve theme to be more efficient/less cruft
-[x] Add navbar with "links" to other lecture notes pages
-[x] Add working 3-wide splash page with placeholders
-[x] Fix heading text 
+- [x] Add Pelican theme to this repo for temporary improvements
+- [x] Improve theme to be more efficient/less cruft
+- [x] Add navbar with "links" to other lecture notes pages
+- [x] Add working 3-wide splash page with placeholders
+- [x] Fix heading text 
 
 TODO for notebooks:
 
-[ ] Convert from MediaWiki to notebooks
-[ ] Add notebook files
-[ ] Add notebook HTML
-[ ] Add notebook export commands to pelican conf
+- [ ] Convert from MediaWiki to notebooks
+- [ ] Add notebook files
+- [ ] Add notebook HTML
+- [ ] Add notebook export commands to pelican conf
 
 TODO for index page:
 
-[ ] Fix (add) image placeholders to index
-[ ] Fix descriptions of each notebook on index
-[ ] Fix navbar links/text
+- [ ] Fix (add) image placeholders to index
+- [ ] Fix descriptions of each notebook on index
+- [x] Fix navbar links/text
 
 TODO for theme:
 
