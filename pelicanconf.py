@@ -15,11 +15,11 @@ import re, os, sys
 # -----------------------
 # SET THIS!!!!!1!11!!!!!!!!!!
 
-### # Local viewing:
-### SITEURL = ''
+# Local viewing:
+SITEURL = ''
 
-# Github hosting
-SITEURL = 'experimental-design'
+### # Github hosting
+### SITEURL = 'experimental-design'
 
 # OK TNX BYE
 # ----------------------
