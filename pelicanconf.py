@@ -19,7 +19,7 @@ import re, os, sys
 SITEURL = ''
 
 ### # Github hosting
-### SITEURL = 'experimental-design'
+### SITEURL = 'experimental-design-notes'
 
 # OK TNX BYE
 # ----------------------
@@ -29,10 +29,10 @@ SITEURL = ''
 OUTPUT_PATH = 'docs/'
 
 AUTHOR = u'charlesreid1'
-SITENAME = u'experimental-design'
+SITENAME = u'experimental-design-notes'
 
 PATH = 'content'
-THEME = 'charlesreid1-lecture-notes-theme'
+THEME = 'charlesreid1-notes-theme'
 
 # To permanently install a theme:
 # git clone <theme-url>/<theme-name>
