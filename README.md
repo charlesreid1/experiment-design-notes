@@ -3,6 +3,10 @@
 Notes on experiment design, statistics, empirical model-building, factorial and composite designs, response surfaces, 
 Monte Carlo, and linear models. 
 
+On the Web: [http://charlesreid1.github.io/experiment-design-notes](http://charlesreid1.github.io/experiment-design-notes)
+
+On Github: [http://github.com/charlesreid1/experiment-design-notes](http://github.com/charlesreid1/experiment-design-notes) 
+
 <br />
 <br />
 
@@ -12,8 +16,6 @@ Monte Carlo, and linear models.
 The main output of the repository consists of HTML pages 
 and Jupyter notebooks containing lecture notes and
 example problems on various experimental design topics. 
-
-**Link:** [http://charlesreid1.github.io/experiment-design](http://charlesreid1.github.io/experiment-design)
 
 To generate these, use Pelican (see next section).
 
@@ -38,7 +40,7 @@ is organized as follows:
     * Jupyter nbconvert commands should be called by `pelicanconf.py`
 
 * Static content in `docs` is hosted on Github Pages 
-    * Link: [http://charlesreid1.github.io/experiment-design](http://charlesreid1.github.io/experiment-design)
+    * See link at top
 
 
 ### Configuration file:
