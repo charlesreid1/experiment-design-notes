@@ -2,43 +2,19 @@
 {% block content %}
 {% set index=True %}
 
+
 {# ================== Header Material ================= #}
 
-<div class="row">
-    <div class="col-lg-12 portfolio-item">
-
-<h1 class="my-4">Experiment Design</h1>
-
-    </div>
-</div>
-
-<div class="row">
-    <div class="col-lg-8 portfolio-item">
-
-<p class="lead">
+{% set lecture_title="Experiment Design" %}
+{% set lead="
 Notes on topics in experiment design, including 
 factorial and fractional factorial designs, composite designs,
 Monte Carlo, and general linear models. 
-<br />
-<br />
-<a href="//github.com/charlesreid1/experiment-design">github.com/charlesreid1/experiment-design</a>
-</p>
-
-    </div>
-</div>
-
-<div class="row">
-    <div class="col-lg-8 portfolio-item">
-
-        <!--
-{% include 'btn_grp.html' %}
-        -->
-
-    </div>
-</div>
+" %}
+{% set link="https://github.com/charlesreid1/experiment-design" %}
+{% include 'lecture_head.html' %}
 
 {# ================== Page Content ==================== #}
-
 
 <p>&nbsp;</p>
 <p>&nbsp;</p>

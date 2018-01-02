@@ -1,7 +1,7 @@
 # experimental-design
 
-Notes on experimental design.
-
+Notes on experiment design, statistics, empirical model-building, factorial and composite designs, response surfaces, 
+Monte Carlo, and linear models. 
 
 <br />
 <br />
