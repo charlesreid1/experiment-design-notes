@@ -3,9 +3,9 @@
 Notes on experiment design, statistics, empirical model-building, factorial and composite designs, response surfaces, 
 Monte Carlo, and linear models. 
 
-On the Web: [http://charlesreid1.github.io/experiment-design-notes](http://charlesreid1.github.io/experiment-design-notes)
+On the Web: [https://charlesreid1.github.io/experiment-design-notes](https://charlesreid1.github.io/experiment-design-notes)
 
-On Github: [http://github.com/charlesreid1/experiment-design-notes](http://github.com/charlesreid1/experiment-design-notes) 
+On Github: [https://github.com/charlesreid1/experiment-design-notes](https://github.com/charlesreid1/experiment-design-notes) 
 
 <br />
 <br />
