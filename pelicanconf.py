@@ -32,7 +32,7 @@ AUTHOR = u'charlesreid1'
 SITENAME = u'experimental-design'
 
 PATH = 'content'
-THEME = 'cmr-lecture-notes-theme'
+THEME = 'charlesreid1-lecture-notes-theme'
 
 # To permanently install a theme:
 # git clone <theme-url>/<theme-name>
