@@ -3,133 +3,108 @@
 {% set index=True %}
 
 
-{# ================== Header Material ================= #}
+{# ========= header =========== #}
 
-{% set lecture_title="Experiment Design" %}
+{% set notes_title="Experiment Design" %}
 {% set lead="
 Notes on topics in experiment design, including 
 factorial and fractional factorial designs, composite designs,
 Monte Carlo, and general linear models. 
 " %}
 {% set link="https://github.com/charlesreid1/experiment-design-notes" %}
-{% include 'lecture_head.html' %}
+{% include 'notes_head.html' %}
 
-{# ================== Page Content ==================== #}
 
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<a name="experiment-design"></a>
-<p>&nbsp;</p>
+{# ========= topic 1 =========== #}
 
-<div class="row">
-  <div class="col-lg-12 portfolio-item">
-      <h1 class="my-4">Experiment Design
-      </h1>
-  </div>
-</div>
-
-<p>&nbsp;</p>
+{% set anchor="experiment-design" %}
+{% set cluster="Experiment Design" %}
+{% include 'notes_clustertitle.html' %}
 
 <div class="row">
 
-  <div class="col-lg-4 col-sm-6 portfolio-item">
-    <div class="card h-100">
-      <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
-      <div class="card-body">
-        <h4 class="card-title">
-          <a href="#">
-          Introduction to Experiment Design
-          </a>
-        </h4>
-        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur eum quasi sapiente nesciunt? Voluptatibus sit, repellat sequi itaque deserunt, dolores in, nesciunt, illum tempora ex quae? Nihil, dolorem!</p>
-      </div>
-    </div>
-  </div>
+    {% set href="/notebooks/Topic1Notebook1.html" %}
+    {% set imgsrc="http://placehold.it/700x400" %}
+    {% set nb="Introduction to Experiment Design" %}
+    {% set card="Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                Amet numquam aspernatur eum quasi sapiente nesciunt? 
+                Voluptatibus sit, repellat sequi itaque deserunt, dolores 
+                in, nesciunt, illum tempora ex quae? Nihil, dolorem!" %}
+    {% include 'notes_notebook.html' %}
 
 </div>
 
 
 
 
+{# ========= topic 2 =========== #}
 
-
-
-
-
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<a name="response-surface"></a>
-<p>&nbsp;</p>
+{% set anchor="response-surfaces" %}
+{% set cluster="Response Surfaces" %}
+{% include 'notes_clustertitle.html' %}
 
 <div class="row">
-  <div class="col-lg-12 portfolio-item">
-      <h1 class="my-4">Response Surfaces
-      </h1>
-  </div>
+
+    {% set href="/notebooks/Topic2Notebook1.html" %}
+    {% set imgsrc="http://placehold.it/700x400" %}
+    {% set nb="Linear and Polynomial Models" %}
+    {% set card="Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                Amet numquam aspernatur eum quasi sapiente nesciunt? 
+                Voluptatibus sit, repellat sequi itaque deserunt, dolores 
+                in, nesciunt, illum tempora ex quae? Nihil, dolorem!" %}
+    {% include 'notes_notebook.html' %}
+
+
+    {% set href="/notebooks/Topic2Notebook2.html" %}
+    {% set imgsrc="http://placehold.it/700x400" %}
+    {% set nb="Screening Designs" %}
+    {% set card="Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                Amet numquam aspernatur eum quasi sapiente nesciunt? 
+                Voluptatibus sit, repellat sequi itaque deserunt, dolores 
+                in, nesciunt, illum tempora ex quae? Nihil, dolorem!" %}
+    {% include 'notes_notebook.html' %}
+
+
+    {% set href="/notebooks/Topic2Notebook2.html" %}
+    {% set imgsrc="http://placehold.it/700x400" %}
+    {% set nb="Factorial Designs" %}
+    {% set card="Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                Amet numquam aspernatur eum quasi sapiente nesciunt? 
+                Voluptatibus sit, repellat sequi itaque deserunt, dolores 
+                in, nesciunt, illum tempora ex quae? Nihil, dolorem!" %}
+    {% include 'notes_notebook.html' %}
+
+
+    {% set href="/notebooks/Topic2Notebook2.html" %}
+    {% set imgsrc="http://placehold.it/700x400" %}
+    {% set nb="Sequential Assembly" %}
+    {% set card="Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                Amet numquam aspernatur eum quasi sapiente nesciunt? 
+                Voluptatibus sit, repellat sequi itaque deserunt, dolores 
+                in, nesciunt, illum tempora ex quae? Nihil, dolorem!" %}
+    {% include 'notes_notebook.html' %}
+
 </div>
 
-<p>&nbsp;</p>
+
+
+
+{# ========= topic 3 =========== #}
+
+{% set anchor="topic-3" %}
+{% set cluster="Topic 3" %}
+{% include 'notes_clustertitle.html' %}
 
 <div class="row">
 
-  <div class="col-lg-4 col-sm-6 portfolio-item">
-    <div class="card h-100">
-      <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
-      <div class="card-body">
-        <h4 class="card-title">
-          <a href="#">
-          Linear and Polynomial Models
-          </a>
-        </h4>
-        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur eum quasi sapiente nesciunt? Voluptatibus sit, repellat sequi itaque deserunt, dolores in, nesciunt, illum tempora ex quae? Nihil, dolorem!</p>
-      </div>
-    </div>
-  </div>
-
-
-  <div class="col-lg-4 col-sm-6 portfolio-item">
-    <div class="card h-100">
-      <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
-      <div class="card-body">
-        <h4 class="card-title">
-          <a href="#">
-          Screening Designs
-          </a>
-        </h4>
-        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur eum quasi sapiente nesciunt? Voluptatibus sit, repellat sequi itaque deserunt, dolores in, nesciunt, illum tempora ex quae? Nihil, dolorem!</p>
-      </div>
-    </div>
-  </div>
-
-
-  <div class="col-lg-4 col-sm-6 portfolio-item">
-    <div class="card h-100">
-      <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
-      <div class="card-body">
-        <h4 class="card-title">
-          <a href="#">
-          Factorial Designs
-          </a>
-        </h4>
-        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur eum quasi sapiente nesciunt? Voluptatibus sit, repellat sequi itaque deserunt, dolores in, nesciunt, illum tempora ex quae? Nihil, dolorem!</p>
-      </div>
-    </div>
-  </div>
-
-
-  <div class="col-lg-4 col-sm-6 portfolio-item">
-    <div class="card h-100">
-      <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
-      <div class="card-body">
-        <h4 class="card-title">
-          <a href="#">
-          Sequential Assembly
-          </a>
-        </h4>
-        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur eum quasi sapiente nesciunt? Voluptatibus sit, repellat sequi itaque deserunt, dolores in, nesciunt, illum tempora ex quae? Nihil, dolorem!</p>
-      </div>
-    </div>
-  </div>
+    {% set href="/notebooks/Topic3Notebook1.html" %}
+    {% set imgsrc="http://placehold.it/700x400" %}
+    {% set nb="Sampling Input Distributions" %}
+    {% set card="Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                Amet numquam aspernatur eum quasi sapiente nesciunt? 
+                Voluptatibus sit, repellat sequi itaque deserunt, dolores 
+                in, nesciunt, illum tempora ex quae? Nihil, dolorem!" %}
+    {% include 'notes_notebook.html' %}
 
 
 </div>
@@ -138,55 +113,7 @@ Monte Carlo, and general linear models.
 
 
 
-
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<a name="monte-carlo"></a>
-<p>&nbsp;</p>
-
-<div class="row">
-  <div class="col-lg-12 portfolio-item">
-      <h1 class="my-4">Monte Carlo for Response Surfaces
-      </h1>
-  </div>
-</div>
-
-<p>&nbsp;</p>
-
-<div class="row">
-
-  <div class="col-lg-4 col-sm-6 portfolio-item">
-    <div class="card h-100">
-      <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
-      <div class="card-body">
-        <h4 class="card-title">
-          <a href="#">
-          Sampling Input Distributions
-          </a>
-        </h4>
-        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur eum quasi sapiente nesciunt? Voluptatibus sit, repellat sequi itaque deserunt, dolores in, nesciunt, illum tempora ex quae? Nihil, dolorem!</p>
-      </div>
-    </div>
-  </div>
-
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+{# ========= bibliography ====== #}
 
 <p>&nbsp;</p>
 <p>&nbsp;</p>
@@ -209,23 +136,7 @@ Monte Carlo, and general linear models.
 
 
 
-
-
-
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-
-<div class="row">
-    <div class="col-lg-8 portfolio-item">
-
-        <!--
-{% include 'btn_grp.html' %}
-        -->
-
-    </div>
-</div>
-
-{# ================ End Page Content ================== #}
+{# ========= fin =========== #}
 
 {% endblock %}
+
