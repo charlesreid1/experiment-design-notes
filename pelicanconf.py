@@ -103,12 +103,11 @@ EXTRA_TEMPLATES_PATHS.append('content')
 TEMPLATE_PAGES = {}
 
 # To add template pages in those directories:
-#TEMPLATE_PAGES['mynotebook.html'] = 'mynotebook.html'
 TEMPLATE_PAGES['splash.html'] = 'index.html'
 
 for html1 in glob.glob("content/ED*.html"):
     html = os.path.basename(html1)
-    TEMPLATE_PAGES[html] = html #'splash.html'] = 'index.html'
+    TEMPLATE_PAGES[html] = html 
 
 
 # Raw HTML:
