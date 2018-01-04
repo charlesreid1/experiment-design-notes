@@ -16,11 +16,11 @@ import glob
 # -----------------------
 # SET THIS!!!!!1!11!!!!!!!!!!
 
-# Local viewing:
-SITEURL = ''
+### # Local viewing:
+### SITEURL = ''
 
-### # Github hosting
-### SITEURL = 'experimental-design-notes'
+# Github hosting
+SITEURL = 'experimental-design-notes'
 
 # OK TNX BYE
 # ----------------------
